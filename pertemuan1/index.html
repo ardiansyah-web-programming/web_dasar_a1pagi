@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 1</title>
+</head>
+<body>
+    
+    <!-- 
+    Cara pertama membuat text ketengah    
+    <center>
+        <h1>Belajar Pemrograman Web Dasar</h1>
+    </center> 
+    -->
+
+    <!-- Cara kedua membuat text ketengah -->
+    <h1 style="text-align: center; color: teal; font-family: 'Lucida Sans';">
+        Belajar Pemrograman Web Dasar
+    </h1>
+    <h3 style="text-align: center; color: brown;">
+        Universitas Muhammadiyah Sumatera Utara
+    </h3>
+    <hr>
+
+    <center>
+    <table border="1" style="text-align: center;">
+        <tr style="background-color: aqua;">
+            <th>No</th>
+            <th>NPM</th>
+            <th>NAMA MAHASISWA</th>
+            <th>Alamat</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1234567</td>
+            <td>SAMBO</td>
+            <td>Sungai Sawang</td>
+        </tr>
+        <tr style="background-color: slategray; color: white;">
+            <td>2</td>
+            <td>7654321</td>
+            <td>Rudi</td>
+            <td>Medan</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>1234567</td>
+            <td>SAMBO</td>
+            <td>Sungai Sawang</td>
+        </tr>
+        <tr style="background-color: slategray; color: white;">
+            <td>4</td>
+            <td>7654321</td>
+            <td>Rudi</td>
+            <td>Medan</td>
+        </tr>
+    </table>
+</center>
+
+</body>
+</html>

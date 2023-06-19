@@ -1,0 +1,27 @@
+.text-header {
+    text-align: center; 
+    color: teal; 
+    font-family: 'Lucida Sans';
+}
+
+.text-h3 {
+    text-align: center; 
+    color: brown;
+}
+
+.text-h4 {
+    color: teal;
+    font-family: 'Lucida Sans';
+}
+
+.table{
+    text-align: center;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    color: #2d7a47;
+}
+
+.table, th, td {
+    border: 1px solid #999;
+    padding: 8px 20px;
+}
