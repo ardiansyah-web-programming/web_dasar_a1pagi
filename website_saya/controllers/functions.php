@@ -19,3 +19,8 @@ function q($data)
 {
   return mysqli_query(koneksi(), $data);
 }
+
+function buku()
+{
+  return q("SELECT * FROM `buku`");
+}
