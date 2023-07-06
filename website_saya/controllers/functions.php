@@ -24,3 +24,10 @@ function buku()
 {
   return q("SELECT * FROM `buku`");
 }
+
+function buku_satu($id_buku,$isi_tabel)
+{
+  $x = mysqli_fetch_assoc(q("SELECT * FROM buku WHERE
+  id = '$id_buku'"));
+  return $x[$isi_tabel];
+}
