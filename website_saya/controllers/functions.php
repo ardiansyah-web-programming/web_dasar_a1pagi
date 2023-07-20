@@ -38,3 +38,22 @@ function buku_satu_jumlah($id_buku)
     q("SELECT * FROM buku WHERE id = '$id_buku'")
   );
 }
+
+function user_satu_jumlah($username)
+{
+  return mysqli_num_rows(
+    q(
+      "SELECT * FROM user WHERE username = '$username'"
+    )
+  );
+}
+
+function user_satu($username, $isi_tabel)
+{
+  $x = mysqli_fetch_assoc(
+    q(
+      "SELECT * FROM user WHERE username = '$username'"
+    )
+  );
+  return $x[$isi_tabel];
+}
