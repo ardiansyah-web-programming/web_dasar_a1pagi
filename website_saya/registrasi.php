@@ -72,22 +72,29 @@
     alert('Confirm Password tidak sesuai!')
     </script>";
     } else {
-      $encrypt_pw = password_hash($pw1, PASSWORD_DEFAULT);
-      $tanggal_hari_ini = date("Y-m-d H:i:s");
-      $simpan_registrasi = q("INSERT INTO user VALUES(null,
-      '$username',
-      '$email',
-      '$encrypt_pw',
-      '$tanggal_hari_ini','$tanggal_hari_ini','')");
-      if ($simpan_registrasi) {
-        echo "<script>
-        alert('Registrasi Anda Berhasil!')
-        location='login.php'
-        </script>";
-      } else {
+      if (user_satu_jumlah($username) > 0) {
         echo "<script>
         alert('Username sudah ada sebelumnya')
         </script>";
+      } else {
+        $encrypt_pw = password_hash($pw1, PASSWORD_DEFAULT);
+        $tanggal_hari_ini = date("Y-m-d H:i:s");
+        $simpan_registrasi = q("INSERT INTO user VALUES(null,
+        '$username',
+        '$email',
+        '$encrypt_pw',
+        '$tanggal_hari_ini','$tanggal_hari_ini','')");
+        if ($simpan_registrasi) {
+          echo "<script>
+          alert('Registrasi Anda Berhasil!')
+          location='login.php'
+          </script>";
+        } else {
+          echo "<script>
+          alert('Registrasi Anda Gagal')
+          location='login.php'
+          </script>";
+        }
       }
     }
   }
